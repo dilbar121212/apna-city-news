@@ -35,8 +35,11 @@ Pages project → Settings → Variables and Secrets میں یہ values شامل
 - `NEWS_API_SECRET` = وہی secret جو Apps Script Script Properties میں رکھا
 - `CF_ACCESS_TEAM_DOMAIN` = مثال `your-team.cloudflareaccess.com` (صرف hostname، https کے بغیر)
 - `CF_ACCESS_AUD` = Cloudflare Access applications کے Audience (AUD) tags، comma-separated (Admin page اور manage API کے دونوں tags)
-- `ADMIN_EMAILS` = comma-separated admin email addresses
-- `EDITOR_EMAILS` = comma-separated editor email addresses
+- `ADMIN_PASSWORD` = Admin پاس ورڈ (Secret کے طور پر محفوظ کریں) — Cloudflare Access کے بغیر لاگ اِن کا متبادل
+- `EDITOR_PASSWORD` = Editor پاس ورڈ (اختیاری، Secret)
+
+## حصہ 3-الف: متبادل — پاس ورڈ سے لاگ اِن (Cloudflare Access کے بغیر)
+اگر Zero Trust / Access دستیاب نہ ہو (مثلاً Free plan signup کے لیے کارڈ مانگا جائے) تو manage-news پاس ورڈ بھی قبول کرتا ہے: Admin صفحہ پاس ورڈ مانگتا ہے، اسے `x-admin-password` header میں بھیجتا ہے، اور Function اسے `ADMIN_PASSWORD` (Admin) یا `EDITOR_PASSWORD` (Editor) سے ملاتا ہے۔ پاس ورڈ صرف Cloudflare Pages → Settings → Variables and Secrets میں Secret کے طور پر رکھیں — اسے کبھی چیٹ، کوڈ یا repository میں نہ لکھیں۔ Cloudflare Access اب بھی کام کرتا ہے؛ اگر Access بعد میں لگ جائے تو دونوں طریقے چلیں گے۔
 
 `NEWS_API_SECRET` کو Secret کے طور پر محفوظ کریں، عام text variable کے طور پر نہیں۔
 

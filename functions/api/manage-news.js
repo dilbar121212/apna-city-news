@@ -1,12 +1,9 @@
 export async function onRequestPost({ request, env }) {
   if (!env.GOOGLE_SCRIPT_URL || !env.NEWS_API_SECRET) return json({error:"Server is not configured"},503);
-  const identity = await verifyAccess(request, env);
+  const identity = await verifyIdentity(request, env);
   if (!identity) return json({error:"Sign in with your newsroom account"},401);
-  const email = String(identity.email || "").toLowerCase();
-  const admins = csv(env.ADMIN_EMAILS);
-  const editors = csv(env.EDITOR_EMAILS);
-  const role = admins.includes(email) ? "admin" : editors.includes(email) ? "editor" : null;
-  if (!role) return json({error:"This account is not authorized"},403);
+  const email = identity.email;
+  const role = identity.role;
 
   let payload;
   try { payload = await request.json(); } catch { return json({error:"Invalid JSON"},400); }
@@ -61,6 +58,24 @@ export async function onRequestPost({ request, env }) {
 }
 function csv(v){return String(v||"").split(",").map(x=>x.trim().toLowerCase()).filter(Boolean)}
 function safeUrl(v){try{const u=new URL(String(v||""));return ["https:","http:"].includes(u.protocol)?u.href:""}catch{return ""}}
+function safeEqual(a,b){a=String(a||"");b=String(b||"");if(!a||!b||a.length!==b.length)return false;let d=0;for(let i=0;i<a.length;i++)d|=a.charCodeAt(i)^b.charCodeAt(i);return d===0}
+async function verifyIdentity(request,env){
+  const auth=request.headers.get("authorization")||"";
+  const pw=request.headers.get("x-admin-password")||(auth.toLowerCase().startsWith("bearer ")?auth.slice(7):"");
+  if(pw){
+    if(env.ADMIN_PASSWORD && safeEqual(pw,env.ADMIN_PASSWORD)) return {email:"admin",role:"admin"};
+    if(env.EDITOR_PASSWORD && safeEqual(pw,env.EDITOR_PASSWORD)) return {email:"editor",role:"editor"};
+    return null;
+  }
+  const identity=await verifyAccess(request,env);
+  if(!identity)return null;
+  const email=String(identity.email||"").toLowerCase();
+  const admins=csv(env.ADMIN_EMAILS);
+  const editors=csv(env.EDITOR_EMAILS);
+  const role=admins.includes(email)?"admin":editors.includes(email)?"editor":null;
+  if(!role)return null;
+  return {email,role};
+}
 async function verifyAccess(request,env) {
   const token=request.headers.get("Cf-Access-Jwt-Assertion");
   if(!token || !env.CF_ACCESS_TEAM_DOMAIN || !env.CF_ACCESS_AUD) return null;
