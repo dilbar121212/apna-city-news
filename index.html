@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0f172a"><meta name="description" content="اپنا سٹی نیوز — آپ کے شہر کی ہر خبر، سب سے پہلے اور سچائی کے ساتھ">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://apna-city-news.pages.dev/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="اپنا سٹی نیوز">
+<meta property="og:locale" content="ur_PK">
+<meta property="og:title" content="اپنا سٹی نیوز | Apna City News">
+<meta property="og:description" content="اپنا سٹی نیوز — آپ کے شہر کی ہر خبر، سب سے پہلے اور سچائی کے ساتھ">
+<meta property="og:url" content="https://apna-city-news.pages.dev/">
+<meta property="og:image" content="https://raw.githubusercontent.com/dilbar121212/apna-city-news/main/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="اپنا سٹی نیوز — آپ کے شہر کی خبر">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="اپنا سٹی نیوز | Apna City News">
+<meta name="twitter:description" content="اپنا سٹی نیوز — آپ کے شہر کی ہر خبر، سب سے پہلے اور سچائی کے ساتھ">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/dilbar121212/apna-city-news/main/assets/og-image.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"اپنا سٹی نیوز","alternateName":"Apna City News","inLanguage":"ur","url":"https://apna-city-news.pages.dev/","publisher":{"@type":"NewsMediaOrganization","name":"اپنا سٹی نیوز","url":"https://apna-city-news.pages.dev/"}}</script>
+<title>اپنا سٹی نیوز | Apna City News</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Urdu:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ========== Apna City News — Pro Design (adapted, live data) ========== */
+:root{
+  --primary:#b91c1c;--primary-dark:#991b1b;--primary-light:#dc2626;
+  --accent:#d97706;--navy:#0f172a;--navy-light:#1e293b;
+  --white:#fff;--off-white:#f8fafc;--gray-50:#f1f5f9;--gray-100:#e2e8f0;
+  --gray-200:#cbd5e1;--gray-400:#94a3b8;--gray-500:#64748b;--gray-700:#334155;--gray-900:#0f172a;
+  --font-urdu:'Noto Nastaliq Urdu','Noto Sans Urdu',system-ui,sans-serif;
+  --font-body:'Noto Sans Urdu',system-ui,sans-serif;
+  --font-sans:'Inter',system-ui,sans-serif;
+  --container:1200px;--radius:12px;--radius-sm:8px;
+  --shadow:0 4px 20px rgba(15,23,42,.08);--shadow-lg:0 10px 40px rgba(15,23,42,.12);
+  --transition:.25s cubic-bezier(.4,0,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-body);background:var(--off-white);color:var(--gray-900);line-height:1.7;direction:rtl;text-align:right;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--font-urdu)}
+a{text-decoration:none;color:inherit;transition:color var(--transition)}
+img{max-width:100%;display:block}
+ul,ol{list-style:none}
+button,input,textarea,select{font:inherit}
+.container{width:100%;max-width:var(--container);margin:0 auto;padding:0 20px}
+section{scroll-margin-top:90px}
+.en{font-family:var(--font-sans);direction:ltr}
+.hide{display:none!important}
+
+/* ========== Breaking Bar ========== */
+.breaking-bar{background:var(--navy);color:var(--white);font-size:.9rem;overflow:hidden}
+.breaking-inner{display:flex;align-items:center;gap:16px;height:42px}
+.breaking-label{background:var(--primary);color:#fff;font-weight:700;padding:4px 14px;border-radius:4px;font-size:.85rem;flex-shrink:0;letter-spacing:.5px}
+.breaking-ticker{flex:1;overflow:hidden;position:relative}
+.ticker-track{display:flex;gap:60px;animation:ticker 40s linear infinite;white-space:nowrap}
+.ticker-track span{display:inline-block}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(50%)}}
+
+/* ========== Header ========== */
+.site-header{background:var(--white);border-bottom:1px solid var(--gray-100);position:sticky;top:0;z-index:100;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:24px}
+.header-right{display:flex;align-items:center;gap:16px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-text{font-size:1.5rem;font-weight:700;color:var(--navy);line-height:1.3}
+.logo-badge{background:var(--primary);color:#fff;font-family:var(--font-sans);font-size:.75rem;font-weight:700;padding:3px 8px;border-radius:4px;letter-spacing:.5px}
+.main-nav{display:flex;align-items:center;gap:8px}
+.nav-link{padding:12px 14px;font-size:.95rem;font-weight:500;color:var(--gray-700);border-radius:var(--radius-sm);transition:all var(--transition);cursor:pointer}
+.nav-link:hover,.nav-link.active{color:var(--primary);background:rgba(185,28,28,.06)}
+.header-left{display:flex;align-items:center;gap:12px}
+.icon-btn{width:44px;height:44px;display:flex;align-items:center;justify-content:center;border:none;background:var(--gray-50);border-radius:50%;color:var(--gray-700);cursor:pointer;transition:all var(--transition)}
+.icon-btn:hover{background:var(--gray-100);color:var(--primary)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 20px;font-family:var(--font-body);font-size:.95rem;font-weight:600;border-radius:var(--radius-sm);border:none;cursor:pointer;transition:all var(--transition)}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-1px)}
+.btn-outline{background:transparent;border:1.5px solid var(--primary);color:var(--primary)}
+.btn-outline:hover{background:var(--primary);color:#fff}
+.btn-sm{padding:8px 16px;font-size:.875rem}
+.menu-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:11px;min-width:44px;min-height:44px;justify-content:center}
+.menu-toggle span{display:block;width:22px;height:2px;background:var(--navy);border-radius:2px;transition:var(--transition)}
+.mobile-menu{position:fixed;inset:0;background:var(--white);z-index:200;padding:24px;transform:translateX(100%);transition:transform .3s ease;overflow-y:auto}
+.mobile-menu.open{transform:translateX(0)}
+.mobile-menu-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:32px}
+.close-menu{background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--gray-700);width:44px;height:44px}
+.mobile-nav{display:flex;flex-direction:column;gap:4px}
+.mobile-nav a{padding:14px 16px;font-size:1.1rem;font-weight:500;color:var(--gray-900);border-radius:var(--radius-sm);cursor:pointer}
+.mobile-nav a:hover{background:var(--gray-50);color:var(--primary)}
+.mobile-nav a.active{color:var(--primary);background:rgba(185,28,28,.06)}
+.mobile-social{margin-top:40px;display:flex;flex-wrap:wrap;gap:12px}
+.mobile-social a{padding:8px 16px;background:var(--gray-50);border-radius:20px;font-size:.9rem}
+
+/* Desktop: lead/feature on the visual LEFT, side list on the RIGHT (brief requirement) */
+@media(min-width:1025px){
+  .hero-grid,.video-grid{direction:ltr}
+  .hero-grid>*,.video-grid>*{direction:rtl}
+}
+/* Search bar */
+.search-bar{display:none;background:var(--white);border-bottom:1px solid var(--gray-100);padding:14px 0}
+.search-bar.open{display:block}
+.search-inner{display:flex;gap:10px;align-items:center}
+.search-inner input{flex:1;border:1.5px solid var(--gray-200);border-radius:30px;padding:12px 18px;min-height:44px;font-family:var(--font-body);font-size:1rem;min-width:0}
+.search-inner input:focus{outline:none;border-color:var(--primary)}
+.search-results-note{font-size:.9rem;color:var(--gray-500);padding:0 0 16px}
+.header-search{display:none}
+@media(min-width:1025px){.header-search{display:flex}}
+.mobile-search{padding:0 0 16px}
+.mobile-search input{width:100%;border:1.5px solid var(--gray-200);border-radius:30px;padding:12px 18px;min-height:44px;font-family:var(--font-body);font-size:1rem}
+.mobile-search input:focus{outline:none;border-color:var(--primary)}
+.hero{padding:32px 0 40px;background:var(--white)}
+.hero-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:24px}
+.hero-lead{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);cursor:pointer;background:var(--white);display:flex;flex-direction:column}
+.hero-image{position:relative;height:420px;flex:none}
+.hero-image img,.hero-image video,.hero-image iframe{width:100%;height:100%;object-fit:cover;display:block;border:0}
+.hero-image .ph{width:100%;height:100%;background:linear-gradient(135deg,#0f172a 0%,#1e293b 50%,#334155 100%);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.25);font-family:var(--font-sans);font-weight:800;font-size:1.6rem;letter-spacing:2px}
+.hero-content{padding:28px 32px;color:var(--gray-900)}
+.hero-content h1{font-size:1.85rem;font-weight:700;line-height:1.45;margin:12px 0 10px;color:var(--navy)}
+.hero-excerpt{font-size:1rem;color:var(--gray-500);margin-bottom:12px;line-height:1.6}
+.hero-side{display:flex;flex-direction:column;gap:16px}
+.hero-side .side-card{flex:1}
+.side-card{background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:transform var(--transition),box-shadow var(--transition);cursor:pointer}
+.side-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.side-card .side-link{display:flex;gap:14px;padding:14px;height:100%}
+.side-image{width:110px;height:90px;flex-shrink:0;border-radius:var(--radius-sm);overflow:hidden;background:var(--navy);display:grid;place-items:center;color:rgba(255,255,255,.4);font-family:var(--font-sans);font-weight:800;font-size:.8rem}
+.side-image img,.side-image video,.side-image iframe{width:100%;height:100%;object-fit:cover;display:block;border:0}
+.side-content{flex:1;display:flex;flex-direction:column;justify-content:center;min-width:0}
+.side-content h3{font-size:1rem;font-weight:600;line-height:1.45;margin:6px 0;color:var(--gray-900)}
+.category-tag{display:inline-block;background:var(--primary);color:#fff;font-size:.75rem;font-weight:600;padding:3px 10px;border-radius:4px;line-height:1.4;align-self:flex-start}
+.category-tag.small{font-size:.75rem;padding:3px 9px}
+.meta{display:flex;align-items:center;gap:8px;font-size:.85rem;color:rgba(255,255,255,.75);font-family:var(--font-sans)}
+.meta.small{color:var(--gray-500);font-size:.85rem}
+.meta.dark{color:var(--gray-500)}
+
+/* ========== Sections ========== */
+.section{padding:48px 0}
+.section-alt{background:var(--white)}
+.section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;padding-bottom:16px;border-bottom:2px solid var(--gray-100);flex-wrap:wrap;gap:10px}
+.section-title{font-size:1.5rem;font-weight:700;color:var(--navy);position:relative;padding-right:16px}
+.section-title::before{content:'';position:absolute;right:0;top:50%;transform:translateY(-50%);width:5px;height:70%;background:var(--primary);border-radius:3px}
+.view-all{font-size:.95rem;font-weight:600;color:var(--primary);cursor:pointer}
+.view-all:hover{color:var(--primary-dark)}
+.filters{display:flex;gap:8px;overflow-x:auto;padding:0 0 20px;scrollbar-width:none}
+.filters::-webkit-scrollbar{display:none}
+.chip{border:1px solid var(--gray-100);background:#fff;border-radius:30px;padding:10px 16px;min-height:44px;display:inline-flex;align-items:center;white-space:nowrap;font-size:.85rem;font-weight:700;cursor:pointer;flex:none;color:var(--gray-700)}
+.chip.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+/* News Grid */
+.news-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.news-card{background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:transform var(--transition),box-shadow var(--transition);cursor:pointer;display:flex;flex-direction:column}
+.news-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.card-image{height:160px;overflow:hidden;background:var(--navy);display:grid;place-items:center;color:rgba(255,255,255,.4);font-family:var(--font-sans);font-weight:800;letter-spacing:1px}
+.card-image img,.card-image video,.card-image iframe{width:100%;height:100%;object-fit:cover;display:block;border:0}
+.card-body{padding:18px;display:flex;flex-direction:column;flex:1}
+.card-body h3{font-size:1.05rem;font-weight:600;line-height:1.45;margin:8px 0 10px;color:var(--gray-900)}
+.card-body p{font-size:1rem;color:var(--gray-500);line-height:1.7;margin-bottom:12px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;flex:1}
+.vid-badge{position:absolute;top:10px;right:10px;background:var(--primary);color:#fff;font-size:.7rem;font-weight:700;padding:4px 10px;border-radius:20px;z-index:2}
+.card-image{position:relative}
+.empty{background:#fff;border:1px dashed var(--gray-200);padding:35px;text-align:center;border-radius:15px;color:var(--gray-500);grid-column:1/-1}
+.share-row{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:12px}
+.share-btn{border:1px solid var(--gray-100);background:var(--gray-50);border-radius:30px;padding:10px 13px;min-height:44px;display:inline-flex;align-items:center;font-size:.78rem;font-weight:700;cursor:pointer;color:var(--gray-700);text-decoration:none}
+.share-btn.wa{background:#e7f8ef;color:#08734f}
+.share-btn.fb{background:#e8eefc;color:#1d4ed8}
+.share-btn.bm.on{background:#fff7d6;border-color:var(--accent);color:#8a6d00}
+.small{font-size:.8rem;color:var(--gray-500)}
+
+/* Citizen / Public Issues */
+.citizen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.citizen-card{background:var(--off-white);border:1px solid var(--gray-100);border-radius:var(--radius);padding:28px 24px;text-align:center;transition:all var(--transition)}
+.citizen-card:hover{border-color:var(--primary);box-shadow:var(--shadow)}
+.citizen-icon{font-size:2rem;margin-bottom:16px}
+.citizen-card h3{font-size:1.15rem;font-weight:700;margin-bottom:10px;color:var(--navy)}
+.citizen-card p{font-size:1rem;color:var(--gray-500);margin-bottom:20px;line-height:1.7}
+.citizen-form-card{background:var(--off-white);border:1px solid var(--gray-100);border-radius:var(--radius);padding:28px 24px}
+.citizen-form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field label{font-size:.8rem;font-weight:800;color:var(--gray-700)}
+.field input,.field textarea{border:1px solid var(--gray-200);border-radius:9px;padding:11px;background:#fff;min-width:0;font-family:var(--font-body)}
+.field textarea{min-height:120px}
+.full{grid-column:1/-1}
+
+/* Video Section */
+.video-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:24px}
+.video-card a{display:block;cursor:pointer}
+.video-thumb{position:relative;height:280px;background:linear-gradient(135deg,#1e293b,#0f172a);border-radius:var(--radius);overflow:hidden;margin-bottom:14px;display:grid;place-items:center;color:rgba(255,255,255,.4);font-family:var(--font-sans);font-weight:800}
+.video-thumb img,.video-thumb video,.video-thumb iframe{width:100%;height:100%;object-fit:cover;display:block;border:0}
+.video-thumb.small{height:90px;width:140px;flex-shrink:0;margin-bottom:0}
+.play-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:60px;height:60px;background:rgba(185,28,28,.9);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;transition:all var(--transition);z-index:2}
+.play-btn.small{width:36px;height:36px;font-size:.9rem}
+.video-card:hover .play-btn{background:var(--primary);transform:translate(-50%,-50%) scale(1.1)}
+.duration{position:absolute;bottom:10px;left:10px;background:rgba(0,0,0,.75);color:#fff;font-size:.75rem;font-family:var(--font-sans);padding:3px 8px;border-radius:4px;z-index:2}
+.video-card h3{font-size:1.2rem;font-weight:600;line-height:1.45}
+.video-side{display:flex;flex-direction:column;gap:16px}
+.video-side .video-card a{display:flex;gap:14px;align-items:center}
+.video-side h4{font-size:.95rem;font-weight:600;line-height:1.4}
+
+/* Categories Grid */
+.categories-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.cat-item{display:flex;flex-direction:column;align-items:center;gap:10px;padding:24px 16px;background:var(--off-white);border:1px solid var(--gray-100);border-radius:var(--radius);font-weight:600;font-size:.95rem;transition:all var(--transition);cursor:pointer;text-align:center}
+.cat-item:hover{background:var(--primary);color:#fff;border-color:var(--primary);transform:translateY(-3px)}
+.cat-icon{font-size:1.6rem}
+
+/* Media kit band */
+.featureband{background:var(--navy);color:#fff;border-radius:20px;padding:26px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.featureband p{color:#c5d1df;margin:5px 0 0;font-size:.85rem}
+
+/* ========== Footer ========== */
+.site-footer{background:var(--navy);color:var(--gray-200);padding:56px 0 0;margin-top:48px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.08)}
+.footer-brand .logo-text{color:#fff}
+.footer-brand p{margin:16px 0 20px;font-size:1rem;line-height:1.7;color:var(--gray-400)}
+.social-links{display:flex;gap:10px}
+.social-links a{width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.08);border-radius:50%;font-family:var(--font-sans);font-weight:600;transition:all var(--transition);color:#fff}
+.social-links a:hover{background:var(--primary);color:#fff}
+.channel-btn{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#fff;border-radius:30px;padding:10px 16px;min-height:44px;display:inline-flex;align-items:center;font-size:.9rem;font-weight:700;margin-top:16px;transition:all var(--transition)}
+.channel-btn:hover{background:var(--primary);border-color:var(--primary);color:#fff}
+.footer-links h4,.footer-contact h4{color:#fff;font-size:1.05rem;margin-bottom:18px}
+.footer-links a{display:block;padding:8px 0;color:var(--gray-400);font-size:1rem;cursor:pointer}
+.footer-links a:hover{color:#fff}
+.footer-contact p{color:var(--gray-400);margin-bottom:16px;font-size:1rem}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-size:.85rem;color:var(--gray-500)}
+
+/* ========== Article Modal ========== */
+.modal{position:fixed;inset:0;background:rgba(6,16,30,.85);z-index:300;display:none;align-items:center;justify-content:center;padding:0}
+.modal.show{display:flex}
+.modalbox{background:#fff;width:100%;height:100dvh;max-height:100dvh;overflow:auto;padding:0}
+.modal-top{position:sticky;top:0;background:#fff;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 18px;border-bottom:1px solid var(--gray-100)}
+.modal-top b{font-family:var(--font-urdu);font-size:17px;color:var(--navy);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#articleDetail{padding:18px 18px 40px}
+#articleDetail h2{font-family:var(--font-urdu);line-height:2;overflow-wrap:anywhere}
+.modal-media{border-radius:14px;overflow:hidden;background:var(--navy);margin:18px 0}
+.modal-media img,.modal-media video,.modal-media iframe{width:100%;display:block;max-height:420px;object-fit:contain}
+.points{margin:16px 0;padding-right:18px}
+.points li{line-height:1.8;font-weight:600}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--primary);outline-offset:2px}
+.loadmore-wrap{text-align:center;margin-top:28px}
+.load-more-btn{border:1.5px solid var(--primary);background:#fff;color:var(--primary);border-radius:30px;padding:12px 28px;min-height:44px;font-weight:700;cursor:pointer;font-size:1rem}
+.load-more-btn:hover{background:var(--primary);color:#fff}
+.loading-note{padding:40px 20px;text-align:center;color:var(--gray-500);font-size:1rem}
+.related{margin-top:26px;border-top:2px solid var(--gray-100);padding-top:18px}
+.related h3{font-size:1.25rem;margin-bottom:14px;color:var(--navy)}
+.related-item{display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--gray-50);cursor:pointer;min-height:64px}
+.related-item .rel-thumb{width:90px;height:64px;flex:none;border-radius:8px;overflow:hidden;background:var(--navy);display:grid;place-items:center;color:rgba(255,255,255,.4);font-family:var(--font-sans);font-weight:800;font-size:.7rem}
+.related-item .rel-thumb img,.related-item .rel-thumb video,.related-item .rel-thumb iframe{width:100%;height:100%;object-fit:cover;display:block;border:0}
+.related-item h4{font-size:.95rem;line-height:1.5;color:var(--gray-900)}
+.about-body{padding:18px 18px 40px}
+.about-body h3{font-size:1.25rem;color:var(--navy);margin:20px 0 8px}
+.about-body p{line-height:1.8;color:var(--gray-700);margin-bottom:10px}
+.about-body ul{padding-right:18px;margin-bottom:10px}
+.about-body li{line-height:1.8;color:var(--gray-700)}
+.close{border:0;background:var(--gray-50);border-radius:8px;padding:8px 12px;cursor:pointer;flex:none;font-weight:700}
+
+/* ========== Bottom Nav (mobile) ========== */
+.bottomnav{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:150;background:#fff;border-top:1px solid var(--gray-100);box-shadow:0 -4px 16px rgba(15,23,42,.08);padding-bottom:env(safe-area-inset-bottom)}
+.bottomnav button{flex:1;border:0;background:none;padding:12px 4px 10px;font-size:12px;font-weight:700;color:var(--gray-500);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:0;font-family:var(--font-body)}
+.bottomnav button.active{color:var(--primary)}
+@media(max-width:820px){body{padding-bottom:62px}}
+
+/* ========== Admin (unchanged from live site) ========== */
+.admin-shell{background:#f2f5f9;min-height:100vh}.admin-top{background:var(--navy);color:#fff;padding:16px}.admin-top .container{display:flex;justify-content:space-between;align-items:center;gap:10px}.admin-main{max-width:1100px;margin:25px auto;padding:0 16px}.admin-card{background:#fff;border:1px solid var(--gray-100);border-radius:16px;padding:20px;margin-bottom:17px}.admin-grid{display:grid;grid-template-columns:1fr;gap:14px}.status{font-size:12px;padding:8px 11px;border-radius:8px;background:#edf8f3;color:#08734f}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:13px}td,th{padding:11px;border-bottom:1px solid var(--gray-100);text-align:right;white-space:nowrap}.admin-actions{display:flex;gap:7px}.danger{background:#fff0f1;color:#b4233a}
+
+/* ========== Responsive ========== */
+@media(max-width:1024px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-image{height:340px}
+  .news-grid{grid-template-columns:repeat(2,1fr)}
+  .citizen-grid{grid-template-columns:1fr}
+  .video-grid{grid-template-columns:1fr}
+  .categories-grid{grid-template-columns:repeat(3,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .main-nav{display:none}
+  .menu-toggle{display:flex}
+  .admin-grid{grid-template-columns:1fr}
+}
+@media(min-width:821px){
+  .bottomnav{display:none}
+  .modal{padding:15px}.modalbox{width:min(860px,100%);height:auto;max-height:92vh;border-radius:20px}
+  .admin-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(min-width:1080px){.news-grid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:640px){
+  .header-inner{height:64px}
+  .logo-text{font-size:1.25rem}
+  .hero{padding:20px 0 28px}
+  .hero-content{padding:20px}
+  .hero-content h1{font-size:1.4rem}
+  .hero-image{height:260px}
+  .side-card .side-link{flex-direction:column}
+  .side-image{width:100%;height:120px}
+  .news-grid{grid-template-columns:1fr}
+  .categories-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr;gap:32px}
+  .footer-bottom{flex-direction:column;gap:8px;text-align:center}
+  .section{padding:36px 0}
+  .section-title{font-size:1.3rem}
+  .citizen-form{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<!-- Breaking Bar -->
+<div class="breaking-bar"><div class="container breaking-inner">
+<span class="breaking-label">بریکنگ</span>
+<div class="breaking-ticker"><div class="ticker-track" id="tickerTrack"><span>اپنا سٹی نیوز — تازہ ترین خبریں</span></div></div>
+<span class="small" id="dateLine" style="color:#c7d3e0;flex:none"></span>
+</div></div>
+
+<!-- Header -->
+<header class="site-header"><div class="container header-inner">
+<div class="header-right">
+<button class="menu-toggle" id="menuToggle" aria-label="مینو"><span></span><span></span><span></span></button>
+<a href="/" class="logo"><span class="logo-text">اپنا سٹی نیوز</span><span class="logo-badge">ACN</span></a>
+</div>
+<nav class="main-nav" id="mainNav">
+<a class="nav-link active" data-cat="all">ہوم</a>
+<a class="nav-link" data-cat="local">مقامی خبریں</a>
+<a class="nav-link" data-cat="civic">عوامی مسائل</a>
+<a class="nav-link" data-cat="world">دنیا</a>
+<a class="nav-link" data-cat="sports_life">کھیل و لائف اسٹائل</a>
+<a class="nav-link" data-goto="videos">ویڈیو</a>
+</nav>
+<div class="header-left">
+<button class="icon-btn header-search" id="searchToggle" aria-label="تلاش"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></button>
+<a class="btn btn-primary btn-sm" href="#send">خبر بھیجیں</a>
+</div>
+</div></header>
+
+<!-- Search Bar -->
+<div class="search-bar" id="searchBar"><div class="container search-inner">
+<input id="searchInput" type="search" placeholder="خبر تلاش کریں… (مثلاً سونا، پیٹرول، سرگودھا)" aria-label="خبر تلاش کریں">
+<button class="btn btn-outline btn-sm" id="searchClear">صاف کریں</button>
+</div></div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+<div class="mobile-menu-header"><span class="logo-text">اپنا سٹی نیوز</span><button class="close-menu" id="closeMenu">✕</button></div>
+<div class="mobile-search"><input id="mobileSearchInput" type="search" placeholder="خبر تلاش کریں…" aria-label="خبر تلاش کریں"></div>
+<nav class="mobile-nav">
+<a data-cat="all">ہوم</a>
+<a data-cat="local">مقامی خبریں</a>
+<a data-cat="civic">عوامی مسائل</a>
+<a data-cat="world">دنیا</a>
+<a data-cat="weather_traffic">موسم و ٹریفک</a>
+<a data-cat="sports_life">کھیل اور لائف اسٹائل</a>
+<a data-goto="videos">ویڈیو</a>
+<a data-goto="saved">بک مارکس</a>
+<a data-goto="send">خبر بھیجیں</a>
+<a data-goto="contact">رابطہ کریں</a>
+</nav>
+<div class="mobile-social">
+<a href="https://www.facebook.com/apnacitynews" target="_blank" rel="noopener">Facebook</a>
+<a href="https://www.instagram.com/apna_citynews" target="_blank" rel="noopener">Instagram</a>
+<a href="https://www.threads.com/@apna_citynews" target="_blank" rel="noopener">Threads</a>
+<a href="https://wa.me/923456434988" target="_blank" rel="noopener">WhatsApp</a>
+<a href="https://whatsapp.com/channel/0029Vb9lhGpEwEjpwrM2al2n" target="_blank" rel="noopener">WhatsApp Channel</a>
+</div>
+</div>
+
+<main>
+<!-- Hero -->
+<section class="hero"><div class="container"><div class="hero-grid" id="heroGrid">
+<article class="hero-lead" id="heroLead"><div class="hero-content"><p class="loading-note">خبریں لوڈ ہو رہی ہیں…</p></div></article>
+<div class="hero-side" id="heroSide"><div class="loading-note">خبریں لوڈ ہو رہی ہیں…</div></div>
+</div></div></section>
+
+<!-- Latest News -->
+<section class="section" id="latest"><div class="container">
+<div class="section-header"><h2 class="section-title">تازہ ترین خبریں</h2><a class="view-all" id="showAll">سب دیکھیں ←</a></div>
+<div class="filters" id="filters">
+<button class="chip active" data-cat="all">تازہ ترین</button>
+<button class="chip" data-cat="local">مقامی خبریں</button>
+<button class="chip" data-cat="civic">عوامی مسائل</button>
+<button class="chip" data-cat="world">دنیا</button>
+<button class="chip" data-cat="weather_traffic">موسم و ٹریفک</button>
+<button class="chip" data-cat="sports_life">کھیل اور لائف اسٹائل</button>
+</div>
+<div class="search-results-note hide" id="searchNote"></div>
+<div class="news-grid" id="newsGrid"><div class="loading-note">خبریں لوڈ ہو رہی ہیں…</div></div>
+<div class="loadmore-wrap"><button class="load-more-btn hide" id="loadMoreBtn">مزید خبریں دیکھیں</button></div>
+</div></section>
+
+<!-- Citizen Journalism / Public Issues -->
+<section class="section section-alt" id="public"><div class="container">
+<div class="section-header"><h2 class="section-title">عوامی مسائل — سٹی ٹریکر</h2><a class="view-all" href="#send">رپورٹ بھیجیں ←</a></div>
+<div class="citizen-grid">
+<div class="citizen-card"><div class="citizen-icon">📍</div><h3>اپنے علاقے کا مسئلہ رپورٹ کریں</h3><p>سڑک، صفائی، پانی، بجلی یا دیگر شہری مسئلے کی تفصیل، مقام اور تصویر بھیجیں۔</p><a href="#send" class="btn btn-outline">مسئلہ رپورٹ کریں</a></div>
+<div class="citizen-card"><div class="citizen-icon">✅</div><h3>ادارتی تصدیق</h3><p>ہر رپورٹ کی جانچ ضروری ہے۔ اشاعت سے پہلے معلومات اور متعلقہ فریق کا مؤقف حاصل کیا جاتا ہے۔</p></div>
+<div class="citizen-card"><div class="citizen-icon">🛡️</div><h3>شفافیت</h3><p>غیر مصدقہ دعوے شائع نہیں ہوتے۔ الزامات ثبوت اور جواب کے بغیر پیش نہیں کیے جاتے۔</p></div>
+</div>
+</div></section>
+
+<!-- Send News -->
+<section class="section" id="send"><div class="container">
+<div class="section-header"><h2 class="section-title">سٹیزن جرنلزم — خبر بھیجیں</h2><span class="small">آپ کی آواز، ہمارا پلیٹ فارم</span></div>
+<div class="citizen-form-card"><form id="citizenForm" class="citizen-form">
+<div class="field"><label>آپ کا نام (اختیاری)</label><input id="citizenName" maxlength="80" placeholder="نام"></div>
+<div class="field"><label>علاقہ / مقام</label><input id="citizenArea" maxlength="120" placeholder="علاقہ اور شہر"></div>
+<div class="field full"><label>خبر کی سرخی</label><input id="citizenTitle" required maxlength="180" placeholder="مختصر سرخی"></div>
+<div class="field full"><label>تفصیل</label><textarea id="citizenBody" required maxlength="3000" placeholder="واقعے کی تاریخ، مقام اور تفصیل لکھیں"></textarea></div>
+<div class="full"><button class="btn btn-primary" type="submit">واٹس ایپ کے ذریعے نیوز روم کو بھیجیں</button><p class="small" style="margin-top:10px">براہ کرم صرف درست معلومات بھیجیں۔ کسی دوسرے شخص کی تصویر یا ذاتی معلومات شیئر کرنے سے پہلے اجازت حاصل کریں۔ خبر کی اشاعت ادارتی تصدیق سے مشروط ہے۔</p></div>
+</form></div>
+</div></section>
+
+<!-- Video -->
+<section class="section section-alt" id="videos" style="display:none"><div class="container">
+<div class="section-header"><h2 class="section-title">ویڈیو</h2><span class="small">تازہ ترین ویڈیو خبریں</span></div>
+<div class="video-grid"><article class="video-card large" id="vidFeature"></article><div class="video-side" id="vidList"></div></div>
+</div></section>
+
+<!-- Categories -->
+<section class="section"><div class="container">
+<div class="categories-grid">
+<a class="cat-item" data-cat="local"><span class="cat-icon">📍</span><span>مقامی خبریں</span></a>
+<a class="cat-item" data-cat="civic"><span class="cat-icon">🗣️</span><span>عوامی مسائل</span></a>
+<a class="cat-item" data-cat="weather_traffic"><span class="cat-icon">🌦️</span><span>موسم و ٹریفک</span></a>
+<a class="cat-item" data-cat="sports_life"><span class="cat-icon">⚽</span><span>کھیل و لائف اسٹائل</span></a>
+<a class="cat-item" data-goto="videos"><span class="cat-icon">🎬</span><span>ویڈیو</span></a>
+<a class="cat-item" data-goto="saved"><span class="cat-icon">📌</span><span>بک مارکس</span></a>
+</div>
+</div></section>
+
+<!-- Media kit -->
+<section class="section"><div class="container">
+<div class="featureband"><div><strong>اشتہارات، میڈیا پارٹنرشپ اور کاروباری رابطہ</strong><p>اشتہارات یا ادارتی تعاون کے لیے نیوز روم سے براہِ راست رابطہ کریں۔ نرخ اور اشاعت کی شرائط باہمی تصدیق کے بعد طے ہوں گی۔</p></div><a class="btn btn-primary" href="https://wa.me/923456434988?text=السلام%20علیکم،%20میں%20اپنا%20سٹی%20نیوز%20پر%20اشتہار%20یا%20میڈیا%20پارٹنرشپ%20کے%20متعلق%20معلومات%20چاہتا%20ہوں۔" target="_blank" rel="noopener">اشتہارات کے لیے رابطہ</a></div>
+</div></section>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer" id="contact"><div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<div class="logo"><span class="logo-text">اپنا سٹی نیوز</span><span class="logo-badge">ACN</span></div>
+<p>آپ کے شہر کی ہر خبر، سب سے پہلے اور سچائی کے ساتھ۔ قارئین کی بھیجی گئی معلومات ادارتی تصدیق کے بعد شائع کی جائیں گی۔</p>
+<div class="social-links">
+<a href="https://www.facebook.com/apnacitynews" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+<a href="https://www.instagram.com/apna_citynews" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+<a href="https://www.threads.com/@apna_citynews" target="_blank" rel="noopener" aria-label="Threads">@</a>
+<a href="https://wa.me/923456434988" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+</div>
+<a href="https://whatsapp.com/channel/0029Vb9lhGpEwEjpwrM2al2n" target="_blank" rel="noopener" class="channel-btn">WhatsApp Channel join karein</a>
+</div>
+<div class="footer-links"><h4>ذرائع</h4>
+<a data-cat="all">تازہ ترین</a>
+<a data-cat="local">مقامی خبریں</a>
+<a data-cat="civic">عوامی مسائل</a>
+<a data-goto="videos">ویڈیو</a>
+</div>
+<div class="footer-links"><h4>ادارہ</h4>
+<a data-about>ہمارے بارے میں</a>
+<a data-about>ادارتی پالیسی</a>
+<a href="#contact">رابطہ کریں</a>
+<a href="https://wa.me/923456434988" target="_blank" rel="noopener">اشتہارات</a>
+</div>
+<div class="footer-contact"><h4>رابطہ</h4>
+<p class="en" style="color:#aebdce">+92 345 6434988</p>
+<p><a href="mailto:silkylineai@gmail.com">ای میل: silkylineai@gmail.com</a></p>
+<p><a href="https://mobile-mandi-server.vercel.app/" target="_blank" rel="noopener">Mobile Mandi — Pakistan mein mobile phones ki qeematein</a></p>
+<p><a href="https://whatsapp.com/channel/0029Vb9lhGpEwEjpwrM2al2n" target="_blank" rel="noopener">WhatsApp Channel join karein</a></p>
+</div>
+</div>
+<div class="footer-bottom"><p>© 2026 اپنا سٹی نیوز — جملہ حقوق محفوظ ہیں</p><p>اپنا سٹی نیوز — شہری صحافت کا پلیٹ فارم</p></div>
+</div></footer>
+
+<nav class="bottomnav">
+<button class="active" data-goto="top">ہوم</button>
+<button data-goto="latest">تازہ ترین</button>
+<button data-goto="videos">ویڈیو</button>
+<button id="bottomMenuBtn">مینیو</button>
+</nav>
+
+<div class="modal" id="articleModal"><div class="modalbox"><div class="modal-top"><b>اپنا سٹی نیوز</b><button class="close" onclick="closeArticle()">بند کریں ✕</button></div><div id="articleDetail"></div></div></div>
+
+<div class="modal" id="aboutModal"><div class="modalbox"><div class="modal-top"><b>اپنا سٹی نیوز</b><button class="close" onclick="closeAbout()">بند کریں ✕</button></div><div class="about-body">
+<h3>ہمارے بارے میں</h3>
+<p>اپنا سٹی نیوز ایک مقامی خبر رساں پلیٹ فارم ہے۔ ہمارا مقصد آپ کے شہر کی خبریں، عوامی مسائل اور شہریوں کی آواز سب سے پہلے اور سچائی کے ساتھ آپ تک پہنچانا ہے۔</p>
+<h3>ادارتی پالیسی</h3>
+<ul>
+<li>ہر خبر کی اشاعت سے پہلے تصدیق کی جاتی ہے — غیر مصدقہ دعوے شائع نہیں ہوتے۔</li>
+<li>ہر خبر کے ساتھ اس کا ذریعہ (مثلاً ڈان، اے آر وائی، دنیا نیوز) واضح طور پر لکھا جاتا ہے۔</li>
+<li>خبر اور رائے میں واضح فرق رکھا جاتا ہے۔</li>
+<li>اگر کسی خبر میں غلطی ہو تو اس کی تصحیح شائع کی جاتی ہے۔</li>
+<li>شہریوں کی بھیجی گئی رپورٹس ادارتی جانچ کے بعد ہی شائع کی جاتی ہیں۔</li>
+<li>کسی شخص کی ذاتی معلومات یا تصویر اس کی اجازت کے بغیر شائع نہیں کی جاتی۔</li>
+<li>اشتہارات اور ادارتی مواد الگ رکھے جاتے ہیں۔</li>
+</ul>
+<h3>رابطہ</h3>
+<p>خبر بھیجنے یا تعاون کے لیے: <a href="https://wa.me/923456434988" target="_blank" rel="noopener">واٹس ایپ: +92 345 6434988</a> — ای میل: <a href="mailto:silkylineai@gmail.com">silkylineai@gmail.com</a></p>
+</div></div></div>
+<script>
+document.getElementById("citizenForm").addEventListener("submit",e=>{e.preventDefault();const text=["سٹیزن جرنلزم رپورٹ","نام: "+document.getElementById("citizenName").value,"مقام: "+document.getElementById("citizenArea").value,"سرخی: "+document.getElementById("citizenTitle").value,"تفصیل: "+document.getElementById("citizenBody").value].join("\n");window.open("https://wa.me/923456434988?text="+encodeURIComponent(text),"_blank","noopener")});
+const CAT={local:"مقامی خبریں",civic:"عوامی مسائل",weather_traffic:"موسم و ٹریفک",sports_life:"کھیل اور لائف اسٹائل",world:"دنیا"};
+let allNews=[],activeCat="all",visibleCount=4,searchQuery="";
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const dateFmt=s=>{try{return new Date(s).toLocaleDateString("ur-PK",{year:"numeric",month:"short",day:"numeric"})}catch{return ""}};
+const timeAgo=s=>{try{const d=(Date.now()-new Date(s).getTime())/1000;if(d<60)return "ابھی";if(d<3600)return Math.floor(d/60)+" منٹ پہلے";if(d<86400)return Math.floor(d/3600)+" گھنٹے پہلے";if(d<86400*7)return Math.floor(d/86400)+" دن پہلے";return dateFmt(s)}catch{return ""}};
+let hashOpened=false;const articleUrl=id=>location.origin+"/news/"+encodeURIComponent(id);
+function openFromHash(){const m=location.hash.match(/^#article-(.+)$/);if(m){const id=decodeURIComponent(m[1]);if(allNews.some(x=>x.id===id))openArticle(id)}}
+async function copyLink(id,btn){const url=articleUrl(id);try{await navigator.clipboard.writeText(url)}catch(e){const t=document.createElement("textarea");t.value=url;document.body.appendChild(t);t.select();try{document.execCommand("copy")}catch(_){}t.remove()}if(btn){const o=btn.textContent;btn.textContent="کاپی ہو گیا ✓";setTimeout(()=>btn.textContent=o,2000)}}
+async function nativeShare(id){const n=allNews.find(x=>x.id===id);if(!n)return;if(navigator.share){try{await navigator.share({title:n.title,text:n.summary||n.title,url:articleUrl(id)})}catch(e){}}else copyLink(id,null)}
+const isVideo=u=>/\.(mp4|webm|mov|m4v)(\?|#|$)/i.test(u||"");
+const ytId=u=>{const m=String(u||"").match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([\w-]{6,})/);return m?m[1]:null};
+const isMediaVideo=n=>isVideo(n.image)||!!ytId(n.image);
+function mediaHtml(n){const u=n.image||"";const y=ytId(u);const alt=esc(n.title||"اپنا سٹی نیوز");if(y)return `<iframe src="https://www.youtube.com/embed/${y}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" title="${alt}"></iframe>`;if(isVideo(u))return `<video src="${esc(u)}" controls preload="metadata" playsinline></video>`;return u?`<img src="${esc(u)}" alt="${alt}" loading="lazy" onerror="this.parentElement.innerHTML='ACN'">`:"ACN"}
+function heroMediaHtml(n){const u=n.image||"";if(!u)return `<div class="ph">ACN</div>`;return mediaHtml(n)}
+/* bookmarks */
+let saved=new Set();try{saved=new Set(JSON.parse(localStorage.getItem("acn-bm")||"[]"))}catch(e){}
+function saveBm(){try{localStorage.setItem("acn-bm",JSON.stringify([...saved]))}catch(e){}}
+function toggleBookmark(id,btn){if(saved.has(id)){saved.delete(id)}else{saved.add(id)}saveBm();if(btn){btn.classList.toggle("on",saved.has(id));btn.textContent=saved.has(id)?"✓ محفوظ شدہ":"🔖 محفوظ کریں"}if(activeCat==="saved")renderNews()}
+/* mobile menu */
+function openMenu(){document.getElementById("mobileMenu").classList.add("open");document.body.style.overflow="hidden"}
+function closeMenu(){document.getElementById("mobileMenu").classList.remove("open");document.body.style.overflow=""}
+document.getElementById("menuToggle").addEventListener("click",openMenu);
+document.getElementById("closeMenu").addEventListener("click",closeMenu);
+document.getElementById("bottomMenuBtn").addEventListener("click",openMenu);
+function setCat(cat){activeCat=cat;visibleCount=12;document.querySelectorAll("#mainNav .nav-link").forEach(x=>x.classList.toggle("active",x.dataset.cat===cat));document.querySelectorAll("#filters .chip").forEach(x=>x.classList.toggle("active",x.dataset.cat===cat));document.querySelectorAll(".mobile-nav a[data-cat]").forEach(x=>x.classList.toggle("active",x.dataset.cat===cat));renderNews()}
+function goTo(where){closeMenu();if(where==="top"){window.scrollTo({top:0,behavior:"smooth"})}else if(where==="saved"){setCat("saved");document.getElementById("latest").scrollIntoView({behavior:"smooth"})}else{const el=document.getElementById(where);if(el)el.scrollIntoView({behavior:"smooth"})}}
+document.addEventListener("click",e=>{const a=e.target.closest("[data-about]");if(a){openAbout();closeMenu();return}const c=e.target.closest("[data-cat]");if(c){setCat(c.dataset.cat);closeMenu();const l=document.getElementById("latest");if(l)l.scrollIntoView({behavior:"smooth"});return}const g=e.target.closest("[data-goto]");if(g){goTo(g.dataset.goto)}});
+document.getElementById("loadMoreBtn").addEventListener("click",()=>{visibleCount+=8;renderNews()});
+/* Search */
+function doSearch(q){searchQuery=(q||"").trim();visibleCount=4;renderNews();if(searchQuery){document.getElementById("latest").scrollIntoView({behavior:"smooth"})}}
+document.getElementById("searchToggle").addEventListener("click",()=>{const bar=document.getElementById("searchBar");bar.classList.toggle("open");if(bar.classList.contains("open"))document.getElementById("searchInput").focus()});
+document.getElementById("searchInput").addEventListener("input",e=>doSearch(e.target.value));
+document.getElementById("searchClear").addEventListener("click",()=>{document.getElementById("searchInput").value="";document.getElementById("mobileSearchInput").value="";doSearch("");document.getElementById("searchBar").classList.remove("open")});
+document.getElementById("mobileSearchInput").addEventListener("input",e=>{doSearch(e.target.value);closeMenu()});
+function openAbout(){document.getElementById("aboutModal").classList.add("show");document.body.style.overflow="hidden"}
+function closeAbout(){document.getElementById("aboutModal").classList.remove("show");document.body.style.overflow=""}
+document.getElementById("showAll").addEventListener("click",()=>setCat("all"));
+async function loadNews(){try{const r=await fetch("/api/public-news",{headers:{accept:"application/json"}});if(!r.ok)throw Error("API "+r.status);const j=await r.json();allNews=Array.isArray(j.news)?j.news:[];renderNews();if(!hashOpened){hashOpened=true;openFromHash()}}catch(e){document.getElementById("newsGrid").innerHTML='<div class="empty">خبریں عارضی طور پر دستیاب نہیں۔ براہ کرم کچھ دیر بعد دوبارہ کوشش کریں۔</div>';document.getElementById("heroLead").innerHTML='<div class="hero-content"><p class="loading-note">خبریں عارضی طور پر دستیاب نہیں۔</p></div>';document.getElementById("heroSide").innerHTML=""}}
+function shareRow(n){const bm=saved.has(n.id);return `<div class="share-row" onclick="event.stopPropagation()"><a class="share-btn wa" target="_blank" rel="noopener" href="https://wa.me/?text=${encodeURIComponent(n.title+" "+articleUrl(n.id))}">WhatsApp</a><a class="share-btn fb" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(articleUrl(n.id))}">Facebook</a><button class="share-btn" onclick="copyLink('${esc(n.id)}',this)">لنک کاپی کریں</button><button class="share-btn bm${bm?" on":""}" onclick="toggleBookmark('${esc(n.id)}',this)">${bm?"✓ محفوظ شدہ":"🔖 محفوظ کریں"}</button></div>`}
+function card(n){return `<article class="news-card${isMediaVideo(n)?" is-vid":""}" onclick="openArticle('${esc(n.id)}')"><div class="card-image">${mediaHtml(n)}${isMediaVideo(n)?'<span class="vid-badge">▶ ویڈیو</span>':""}</div><div class="card-body"><span class="category-tag small">${esc(CAT[n.category]||"خبر")}</span><h3>${esc(n.title)}</h3><p>${esc(n.summary||n.body||"")}</p><div class="meta small dark"><span>${esc(n.source||"نیوز ڈیسک")}</span><span>${timeAgo(n.createdAt)}</span></div>${shareRow(n)}</div></article>`}
+function renderNews(){
+  let list=activeCat==="saved"?allNews.filter(n=>saved.has(n.id)):allNews.filter(n=>activeCat==="all"||n.category===activeCat);
+  if(searchQuery){const q=searchQuery.toLowerCase();list=list.filter(n=>(n.title+" "+(n.summary||"")+" "+(n.body||"")).toLowerCase().includes(q))}
+  const shown=searchQuery?list:list.slice(0,visibleCount);
+  document.getElementById("newsGrid").innerHTML=shown.length?shown.map(card).join(""):(searchQuery?'<div class="empty">اس تلاش کے لیے کوئی خبر نہیں ملی۔ کوئی اور لفظ آزمائیں۔</div>':(activeCat==="saved"?'<div class="empty">ابھی کوئی خبر محفوظ نہیں کی گئی۔ کسی خبر پر 🔖 محفوظ کریں دبائیں۔</div>':'<div class="empty">اس کیٹیگری میں فی الحال کوئی خبر شائع نہیں ہوئی۔</div>'));
+  document.getElementById("loadMoreBtn").classList.toggle("hide",searchQuery?true:list.length<=visibleCount);
+  const note=document.getElementById("searchNote");
+  if(searchQuery){note.classList.remove("hide");note.textContent=`تلاش: "${searchQuery}" — ${list.length} نتائج`;}else{note.classList.add("hide");note.textContent="";}
+  const br=allNews.filter(n=>n.breaking);const t=br.length?br.map(n=>n.title).join("  •  "):"اپنا سٹی نیوز — تازہ ترین خبریں";
+  document.getElementById("tickerTrack").innerHTML=`<span>${esc(t)}</span><span>${esc(t)}</span>`;
+  const featured=allNews.find(n=>n.featured)||allNews[0];
+  if(featured){document.getElementById("heroLead").innerHTML=`<div class="hero-image">${heroMediaHtml(featured)}</div><div class="hero-content"><span class="category-tag">${esc(CAT[featured.category]||"خبر")}</span><h1>${esc(featured.title)}</h1><p class="hero-excerpt">${esc(featured.summary||featured.body||"")}</p><div class="meta dark"><span>${dateFmt(featured.createdAt)}</span><span>•</span><span>${esc(featured.source||"اپنا سٹی نیوز")}</span></div></div>`;document.getElementById("heroLead").onclick=()=>openArticle(featured.id)}
+  const side=allNews.filter(n=>n!==featured).slice(0,3);
+  document.getElementById("heroSide").innerHTML=side.map(n=>`<article class="side-card" onclick="openArticle('${esc(n.id)}')"><div class="side-link"><div class="side-image">${mediaHtml(n)}</div><div class="side-content"><span class="category-tag small">${esc(CAT[n.category]||"خبر")}</span><h3>${esc(n.title)}</h3><div class="meta small dark"><span>${timeAgo(n.createdAt)}</span><span>•</span><span>${esc(n.source||"نیوز ڈیسک")}</span></div></div></div></article>`).join("");
+  renderVideos();
+}
+function renderVideos(){const vids=allNews.filter(isMediaVideo);const sec=document.getElementById("videos");if(!vids.length){sec.style.display="none";return}sec.style.display="";const f=vids[0];document.getElementById("vidFeature").innerHTML=`<a onclick="openArticle('${esc(f.id)}')"><div class="video-thumb">${mediaHtml(f)}<div class="play-btn">▶</div></div><h3>${esc(f.title)}</h3></a>`;document.getElementById("vidList").innerHTML=vids.slice(1,4).map(n=>`<article class="video-card"><a onclick="openArticle('${esc(n.id)}')"><div class="video-thumb small">${mediaHtml(n)}<div class="play-btn small">▶</div></div><h4>${esc(n.title)}</h4></a></article>`).join("")}
+function openArticle(id){const n=allNews.find(x=>x.id===id);if(!n)return;const bm=saved.has(n.id);const points=(n.body||"").split(/[۔\n]/).map(s=>s.trim()).filter(s=>s.length>25).slice(0,3);
+const paras=(n.body||n.summary||"").split(/\n+/).map(s=>s.trim()).filter(Boolean);
+const bodyHtml=paras.length?paras.map(p=>`<p style="line-height:1.8;margin-bottom:14px">${esc(p)}</p>`).join(""):`<p style="line-height:1.8">${esc(n.body||n.summary||"")}</p>`;
+const rel=allNews.filter(x=>x.id!==id&&x.category===n.category).slice(0,3);const relAll=rel.length?rel:allNews.filter(x=>x.id!==id).slice(0,3);
+const relHtml=relAll.length?`<div class="related"><h3>متعلقہ خبریں</h3>${relAll.map(r=>`<div class="related-item" onclick="openArticle('${esc(r.id)}')"><div class="rel-thumb">${mediaHtml(r)}</div><h4>${esc(r.title)}</h4></div>`).join("")}</div>`:"";
+document.getElementById("articleDetail").innerHTML=`<span class="category-tag">${esc(CAT[n.category]||"خبر")}</span><h2>${esc(n.title)}</h2><div class="meta small dark" style="margin:8px 0"><span>${esc(n.source||"نیوز ڈیسک")}</span><span>•</span><span>${dateFmt(n.createdAt)} · ${timeAgo(n.createdAt)}</span></div>${n.image?`<div class="modal-media">${mediaHtml(n)}</div>`:""}${points.length>1?`<ul class="points">${points.map(p=>`<li>${esc(p)}</li>`).join("")}</ul>`:""}${bodyHtml}<div class="share-row"><span class="small">شیئر کریں:</span><a class="share-btn wa" target="_blank" rel="noopener" href="https://wa.me/?text=${encodeURIComponent(n.title+" "+articleUrl(n.id))}">WhatsApp</a><a class="share-btn fb" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(articleUrl(n.id))}">Facebook</a><a class="share-btn" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=${encodeURIComponent(n.title)}&url=${encodeURIComponent(articleUrl(n.id))}">X</a><button class="share-btn" onclick="nativeShare('${esc(n.id)}')">شیئر کریں</button><button class="share-btn" onclick="copyLink('${esc(n.id)}',this)">لنک کاپی کریں</button><button class="share-btn bm${bm?" on":""}" onclick="toggleBookmark('${esc(n.id)}',this)">${bm?"✓ محفوظ شدہ":"🔖 محفوظ کریں"}</button></div>${relHtml}<p class="small" style="margin-top:14px">اپنا سٹی نیوز — خبر کی اشاعت ادارتی پالیسی کے مطابق</p>`;document.getElementById("articleModal").classList.add("show");document.body.style.overflow="hidden";try{history.replaceState(null,"","#article-"+encodeURIComponent(n.id))}catch(e){}}
+function closeArticle(){document.getElementById("articleModal").classList.remove("show");document.body.style.overflow="";try{history.replaceState(null,"",location.pathname+location.search)}catch(e){}}
+document.getElementById("dateLine").textContent=new Date().toLocaleDateString("ur-PK",{weekday:"long",year:"numeric",month:"long",day:"numeric"});
+loadNews();setInterval(loadNews,60000);
+</script></body></html>
